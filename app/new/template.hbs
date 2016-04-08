@@ -15,10 +15,10 @@
     </li>
   </ul>
 
-  <div>
+  <div class="form-submit">
     {{#link-to "index"}}
-      <button {{action clearForm on="click"}}>Cancel</button>
+      <button class="form-button button-grey" {{action clearForm on="click"}}>CANCEL</button>
     {{/link-to}}
-    <button>Save</button>
+    <button class="form-button button-green">SAVE</button>
   </div>
 </form>

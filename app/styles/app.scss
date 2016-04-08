@@ -4,16 +4,21 @@ $button-text-grey: #1c1c1c;
 $background-blue: #00bbd3;
 $text-title: #fff;
 $text-body: rgba(255, 255, 255, .6);
-$text-placeholder: rgba(255, 255, 255, .4);
+$text-placeholder: rgba(255, 255, 255, .2);
 $text-green: #92cbc5;
 $body-background: #282828;
 $gutter: 1rem;
-$form-glow: 0 0 10px $text-placeholder;
+$form-glow: 0 0 10px $text-green;
 
 body {
   background: $body-background;
   font-family: 'Roboto', sans-serif;
   margin: 0;
+}
+
+button {
+  outline: none;
+  cursor: pointer;
 }
 
 a {
@@ -47,6 +52,26 @@ input, textarea {
   }
 }
 
+.container {
+  margin: auto;
+  max-width: 30rem;
+}
+
+.nav-container {
+  background: $background-blue;
+  overflow: auto;
+}
+
+.app-title {
+  color: $text-title;
+  font-weight: normal;
+}
+
+.run-submit {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .form-title {
   color: $text-title;
 }
@@ -55,13 +80,29 @@ input, textarea {
   border-bottom: 1px solid $text-placeholder;
 }
 
-.container {
-  margin: auto;
-  max-width: 30rem;
+.button-grey {
+  background: $button-grey;
 }
 
-.nav-container {
-  background: $background-blue;
-  color: $text-title;
-  overflow: auto;
+.button-green {
+  background: $button-green;
+}
+
+.button-new {
+  border: 0;
+  border-radius: 50%;
+  height: 3rem;
+  padding: $gutter / 2 $gutter;
+  width: 3rem;
+}
+
+.form-button {
+  border: 0;
+  padding: $gutter / 2 $gutter;
+}
+
+
+.form-submit {
+  display: flex;
+  justify-content: space-between;
 }
