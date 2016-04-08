@@ -1,13 +1,13 @@
 body {
+  min-height: 100vh;
+  margin: 0;
   background: $body-background;
   font-family: 'Roboto', sans-serif;
-  margin: 0;
-  min-height: 100vh;
 }
 
 button {
-  cursor: pointer;
   outline: none;
+  cursor: pointer;
 }
 
 a {
@@ -15,25 +15,27 @@ a {
   text-decoration: none;
 }
 
-ul, li {
+ul,
+li {
+  width: 100%;
+  padding: 0;
   border: 0;
   list-style: none;
-  padding: 0;
-  width: 100%;
 }
 
-input, textarea {
-  background: $body-background;
+input,
+textarea {
+  width: 100%;
+  margin: $gutter;
   border: 0;
+  background: $body-background;
   color: $text-body;
   font-size: 1rem;
-  margin: $gutter;
   overflow: auto;
-  width: 100%;
 
   &:focus {
-    box-shadow: $form-glow;
     outline: none;
+    box-shadow: $form-glow;
   }
 
   &::-webkit-input-placeholder {

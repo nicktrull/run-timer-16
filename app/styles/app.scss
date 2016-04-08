@@ -3,8 +3,8 @@ $button-green: #80cbc4;
 $button-text-grey: #1c1c1c;
 $background-blue: #00bbd3;
 $text-title: #fff;
-$text-body: rgba(255, 255, 255, .6);
-$text-placeholder: rgba(255, 255, 255, .2);
+$text-body: rgba(255, 255, 255, 0.6);
+$text-placeholder: rgba(255, 255, 255, 0.2);
 $text-green: #92cbc5;
 $body-background: #282828;
 $gutter: 1rem;
@@ -15,9 +15,9 @@ $form-glow: 0 0 10px $text-green;
 @import 'index';
 
 .container {
-  margin: auto;
-  max-width: 30rem;
   width: 100%;
+  max-width: 30rem;
+  margin: auto;
 }
 
 .nav-container {
