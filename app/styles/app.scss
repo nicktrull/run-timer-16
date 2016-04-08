@@ -10,51 +10,14 @@ $body-background: #282828;
 $gutter: 1rem;
 $form-glow: 0 0 10px $text-green;
 
-body {
-  background: $body-background;
-  font-family: 'Roboto', sans-serif;
-  margin: 0;
-}
-
-button {
-  outline: none;
-  cursor: pointer;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-ul, li {
-  border: 0;
-  list-style: none;
-  padding: 0;
-  width: 100%;
-}
-
-input, textarea {
-  background: $body-background;
-  border: 0;
-  color: $text-body;
-  font-size: 1rem;
-  margin: $gutter;
-  overflow: auto;
-  width: 100%;
-
-  &:focus {
-    box-shadow: $form-glow;
-    outline: none;
-  }
-
-  &::-webkit-input-placeholder {
-    color: $text-placeholder;
-  }
-}
+@import 'base';
+@import 'new-run';
+@import 'index';
 
 .container {
   margin: auto;
   max-width: 30rem;
+  width: 100%;
 }
 
 .nav-container {
@@ -67,42 +30,10 @@ input, textarea {
   font-weight: normal;
 }
 
-.run-submit {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.form-title {
-  color: $text-title;
-}
-
-.form-list {
-  border-bottom: 1px solid $text-placeholder;
-}
-
 .button-grey {
   background: $button-grey;
 }
 
 .button-green {
   background: $button-green;
-}
-
-.button-new {
-  border: 0;
-  border-radius: 50%;
-  height: 3rem;
-  padding: $gutter / 2 $gutter;
-  width: 3rem;
-}
-
-.form-button {
-  border: 0;
-  padding: $gutter / 2 $gutter;
-}
-
-
-.form-submit {
-  display: flex;
-  justify-content: space-between;
 }

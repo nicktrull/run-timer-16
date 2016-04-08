@@ -1,0 +1,18 @@
+.form-title {
+  color: $text-title;
+}
+
+.form-list {
+  border-bottom: 1px solid $text-placeholder;
+}
+
+.form-button {
+  border: 0;
+  padding: $gutter / 2 $gutter;
+}
+
+
+.form-submit {
+  display: flex;
+  justify-content: space-between;
+}

@@ -1,0 +1,16 @@
+.run-submit {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.button-new {
+  border: 0;
+  border-radius: 50%;
+  height: 3rem;
+  padding: $gutter / 2 $gutter;
+  width: 3rem;
+
+  &__icon {
+    color: $text-title;
+  }
+}
