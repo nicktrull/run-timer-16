@@ -1,0 +1,22 @@
+<h2>New Run</h2>
+
+<form {{action newRun on="submit"}}>
+  <ul>
+    <li>
+      {{input type="text" placeholder="Run Time" value=time}}
+    </li>
+    <li>
+      {{input type="text" placeholder="Run Date" value=date}}
+    </li>
+    <li>
+      {{input type="text" placeholder="Race Notes" value=notes}}
+    </li>
+  </ul>
+
+  <div>
+    {{#link-to "index"}}
+      <button {{action clearForm on="click"}}>Cancel</button>
+    {{/link-to}}
+    <button>Save</button>
+  </div>
+</form>

@@ -1,0 +1,13 @@
+<ul>
+  {{#each model as |run|}}
+    <li>{{run.date}}{{run.time}}</li>
+  {{/each}}
+</ul>
+
+<div class="app-container">
+  <div class="container">
+    {{#link-to "new"}}
+      <button>New</button>
+    {{/link-to}}
+  </div>
+</div>
