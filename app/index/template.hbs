@@ -1,6 +1,6 @@
 <ul class="run-list">
     {{#each model as |run|}}
-      <li>{{run.date}}{{run.time}}</li>
+      <li class="run-list__item"><span class="run-list__item--text">{{run.date}}</span><span class="run-list__item--text text-green">{{run.time}}</span></li>
       <button {{action removeRun run on="click"}}>x</button>
     {{/each}}
 </ul>

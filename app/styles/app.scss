@@ -25,7 +25,12 @@ $form-glow: 0 0 10px $text-green;
   overflow: auto;
 }
 
+.app-container {
+  margin: $gutter;
+}
+
 .app-title {
+  margin: $gutter;
   color: $text-title;
   font-weight: normal;
 }
@@ -36,4 +41,8 @@ $form-glow: 0 0 10px $text-green;
 
 .button-green {
   background: $button-green;
+}
+
+.text-green {
+  color: $text-green;
 }
