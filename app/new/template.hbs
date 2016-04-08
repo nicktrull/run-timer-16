@@ -1,15 +1,17 @@
-<h2>New Run</h2>
+<h2 class="form-title">New Run</h2>
 
-<form {{action newRun on="submit"}}>
+<form {{action newRun on="submit"}} novalidate="novalidate">
   <ul>
-    <li>
-      {{input type="text" placeholder="Run Time" value=time}}
+    <li class="form-list">
+      {{input-formatted pattern="{{99}}:{{99}}:{{99}}"
+                        placeholder="Run Time (hh:mm:ss)"
+                        value=time}}
     </li>
-    <li>
-      {{input type="text" placeholder="Run Date" value=date}}
+    <li class="form-list">
+      {{input-formatted pattern="{{99}}/{{99}}/{{9999}}" placeholder="Run Date (mm/dd/yyyy)" value=date}}
     </li>
-    <li>
-      {{input type="text" placeholder="Race Notes" value=notes}}
+    <li class="form-list">
+      {{textarea placeholder="Race Notes" value=notes}}
     </li>
   </ul>
 

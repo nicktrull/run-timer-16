@@ -1,7 +1,10 @@
 <ul>
-  {{#each model as |run|}}
-    <li>{{run.date}}{{run.time}}</li>
-  {{/each}}
+  <div class="container">
+    {{#each model as |run|}}
+      <li>{{run.date}}{{run.time}}</li>
+      <button {{action removeRun run on="click"}}>x</button>
+    {{/each}}
+  </div>
 </ul>
 
 <div class="app-container">
