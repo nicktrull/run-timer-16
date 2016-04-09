@@ -19,6 +19,23 @@ export default Ember.Controller.extend({
     });
   },
 
+  removeRun(run) {
+    const url = `http://tiny-tn.herokuapp.com/collections/runs-nt/${run._id}`;
+
+    return fetch(url, {
+      method: `DELETE`,
+    }).then(() => {
+      this.transitionToRoute(`index`);
+      this.deleteRun();
+    });
+  },
+
+  deleteRun(run) {
+    this.set(`model`, this.model.filter((curr) => {
+      return curr !== run;
+    }));
+  },
+
   clearForm() {
     this.set(`date`, ``);
     this.set(`time`, ``);

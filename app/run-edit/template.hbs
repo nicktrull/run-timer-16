@@ -16,14 +16,16 @@
         </li>
         <li class="form-list">
           {{textarea placeholder="Race Notes"
+                     autoresize=true
                      value=model.notes}}
         </li>
       </ul>
 
       <div class="form-submit">
         {{#link-to "run-detail" model._id}}
-          <button class="form-button button-grey" {{action clearForm on="click"}}>Back</button>
+          <button class="form-button button-grey" {{action clearForm on="click"}}>BACK</button>
         {{/link-to}}
+        <button class="form-button button-dark" {{action removeRun model on="click"}}><i class="fa fa-trash"></i></button>
         <button class="form-button button-green">SAVE</button>
       </div>
     </form>

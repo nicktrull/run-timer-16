@@ -1,5 +1,7 @@
 $button-grey: #ddd;
 $button-green: #80cbc4;
+$button-text-red: #a73c3c;
+$button-dark: #2f2f2f;
 $button-text-grey: #1c1c1c;
 $background-blue: #00bbd3;
 $text-title: #fff;
@@ -45,6 +47,11 @@ $form-glow: 0 0 10px $text-green;
   margin: $gutter;
   color: $text-title;
   font-weight: normal;
+}
+
+.button-dark {
+  background: $body-background;
+  color: $button-text-red;
 }
 
 .button-grey {
