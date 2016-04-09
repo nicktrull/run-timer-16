@@ -1,0 +1,21 @@
+
+.run-details {
+  display: flex;
+  justify-content: space-between;
+
+  &__title {
+    color: $text-title;
+  }
+
+  &__item--text {
+    color: $text-body;
+    font-weight: 100;
+  }
+
+  &__content {
+    margin: $gutter 0;
+    color: $text-body;
+    font-weight: 100;
+    overflow: auto;
+  }
+}

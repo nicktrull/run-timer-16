@@ -1,13 +1,21 @@
-<ul class="run-list">
-    {{#each model as |run|}}
-      {{#link-to "run-detail" run._id}}
-        <li class="run-list__item"><span class="run-list__item--text">{{run.date}}</span><span class="run-list__item--text text-green">{{run.time}}</span></li>
-      {{/link-to}}
-      <button {{action removeRun run on="click"}}>x</button>
-    {{/each}}
-</ul>
+<div class="container">
+  <div class="app-container">
+    <ul class="run-list">
+        {{#each model as |run|}}
+          {{#link-to "run-detail" run._id}}
+            <li class="run-list__item">
+              <span class="run-list__item--text">{{run.date}}</span>
+              <span class="run-list__item--text text-green">{{run.time}}</span>
+            </li>
+          {{/link-to}}
+          <button {{action removeRun run on="click"}}>x</button>
+        {{/each}}
+    </ul>
 
-<div class="run-submit">{{#link-to "new"}}
-    <button class="button-new button-green"><i class="button-new__icon fa fa-plus"></i></button>
-  {{/link-to}}
+    <div class="run-submit">
+      {{#link-to "new"}}
+        <button class="button-new button-green"><i class="button-new__icon fa fa-plus"></i></button>
+      {{/link-to}}
+    </div>
+  </div>
 </div>

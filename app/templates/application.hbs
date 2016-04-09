@@ -1,13 +1,11 @@
-<nav class="nav-container">
-  <div class="container">
-    {{#link-to "index"}}
-      <h2 class="app-title">Run Timer</h2>
-    {{/link-to}}
-  </div>
-</nav>
+<div class="application">
+  <nav class="nav-container">
+    <div class="container">
+      {{#link-to "index"}}
+        <h2 class="app-title">Run Timer</h2>
+      {{/link-to}}
+    </div>
+  </nav>
 
-<div class="container">
-  <div class="app-container">
-    {{outlet}}
-  </div>
+  {{outlet}}
 </div>
