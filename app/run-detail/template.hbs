@@ -14,7 +14,9 @@
       {{#link-to "index"}}
         <button class="button button-grey"><i class="button__icon fa fa-chevron-left"></i></button>
       {{/link-to}}
-      <button class="button button-green"><i class="button__icon fa fa-pencil"></i></button>
+      {{#link-to "run-edit" model._id}}
+        <button class="button button-green"><i class="button__icon fa fa-pencil"></i></button>
+      {{/link-to}}
     </div>
   </div>
 </div>
