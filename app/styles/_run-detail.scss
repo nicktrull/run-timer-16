@@ -1,7 +1,10 @@
 
 .run-details {
-  display: flex;
-  justify-content: space-between;
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+  }
 
   &__title {
     color: $text-title;
@@ -17,5 +20,22 @@
     color: $text-body;
     font-weight: 100;
     overflow: auto;
+  }
+}
+
+.run-details__edit {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button {
+  width: 3rem;
+  height: 3rem;
+  padding: $gutter / 2 $gutter;
+  border: 0;
+  border-radius: 50%;
+
+  &__icon {
+    color: $text-title;
   }
 }
