@@ -34,11 +34,11 @@ $form-glow: 0 0 10px $text-green;
 }
 
 .app-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   min-height: 86vh;
-margin: 1rem;
-display: flex;
-flex-direction: column;
-justify-content: space-between;
+  margin: 1rem;
 }
 
 .app-title {
