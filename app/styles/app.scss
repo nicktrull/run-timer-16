@@ -10,7 +10,7 @@ $text-placeholder: rgba(255, 255, 255, 0.2);
 $text-green: #92cbc5;
 $body-background: #282828;
 $gutter: 1rem;
-$form-glow: 0 0 10px $text-green;
+$form-glow: 0 0 10px $text-placeholder;
 
 @import 'base';
 @import 'new-run';
@@ -50,8 +50,10 @@ $form-glow: 0 0 10px $text-green;
 }
 
 .button-dark {
+  padding: 0;
   background: $body-background;
-  color: $button-text-red;
+  color: $text-green;
+  font-size: 2rem;
 }
 
 .button-grey {

@@ -21,13 +21,14 @@ export default Ember.Controller.extend({
 
   removeRun(run) {
     const url = `http://tiny-tn.herokuapp.com/collections/runs-nt/${run._id}`;
-
-    return fetch(url, {
-      method: `DELETE`,
-    }).then(() => {
-      this.transitionToRoute(`index`);
-      this.deleteRun();
-    });
+    if (window.confirm(`Are you sure you want to delete your run from ${run.date}?`)) {
+      return fetch(url, {
+        method: `DELETE`,
+      }).then(() => {
+        this.transitionToRoute(`index`);
+        this.deleteRun();
+      });
+    }
   },
 
   deleteRun(run) {
