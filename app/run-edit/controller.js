@@ -20,6 +20,7 @@ export default Ember.Controller.extend({
   },
 
   removeRun(run) {
+    debugger;
     const url = `http://tiny-tn.herokuapp.com/collections/runs-nt/${run._id}`;
     if (window.confirm(`Are you sure you want to delete your run from ${run.date}?`)) {
       return fetch(url, {
