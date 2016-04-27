@@ -2,9 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model() {
-    const url = `http://tiny-tn.herokuapp.com/collections/runs-nt`;
-
-    return fetch(url)
+    return fetch(`http://tiny-tn.herokuapp.com/collections/runs-nt`)
     .then((results) => results.json());
   },
 });
