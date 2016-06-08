@@ -1,0 +1,69 @@
+$button-grey: #ddd;
+$button-green: #80cbc4;
+$button-text-red: #a73c3c;
+$button-dark: #2f2f2f;
+$button-text-grey: #1c1c1c;
+$background-blue: #00bbd3;
+$text-title: #fff;
+$text-body: rgba(255, 255, 255, 0.6);
+$text-placeholder: rgba(255, 255, 255, 0.2);
+$text-green: #92cbc5;
+$body-background: #282828;
+$gutter: 1rem;
+$form-glow: 0 0 10px $text-placeholder;
+
+@import 'base';
+@import 'new-run';
+@import 'index';
+@import 'run-detail';
+
+.application {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  flex-grow: 1;
+  width: 100%;
+  max-width: 30rem;
+  margin: 0 auto;
+}
+
+.nav-container {
+  background: $background-blue;
+  overflow: auto;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 86vh;
+  margin: 1rem;
+}
+
+.app-title {
+  margin: $gutter;
+  color: $text-title;
+  font-weight: normal;
+}
+
+.button-dark {
+  padding: 0;
+  background: $body-background;
+  color: $text-green;
+  font-size: 2rem;
+}
+
+.button-grey {
+  background: $button-grey;
+}
+
+.button-green {
+  background: $button-green;
+}
+
+.text-green {
+  color: $text-green;
+}

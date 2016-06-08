@@ -1,3 +1,11 @@
-<h2 id="title">Welcome to Ember</h2>
+<div class="application">
+  <nav class="nav-container">
+    <div class="container">
+      {{#link-to "index"}}
+        <h2 class="app-title">Run Timer</h2>
+      {{/link-to}}
+    </div>
+  </nav>
 
-{{outlet}}
+  {{outlet}}
+</div>

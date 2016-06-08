@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="app-container">
+
+    <form {{action editRun on="submit"}} novalidate="novalidate">
+      <h2 class="form-title">Edit Run</h2>
+      <ul>
+        <li class="form-list">
+          {{input-formatted pattern="{{99}}:{{99}}:{{99}}"
+                            placeholder="Run Time (hh:mm:ss)"
+                            value=model.time}}
+        </li>
+        <li class="form-list">
+          {{input-formatted pattern="{{99}}/{{99}}/{{9999}}"
+                            placeholder="Run Date (mm/dd/yyyy)"
+                            value=model.date}}
+        </li>
+        <li class="form-list">
+          {{textarea placeholder="Race Notes"
+                     autoresize=true
+                     value=model.notes}}
+        </li>
+      </ul>
+
+      <div class="form-submit">
+        {{#link-to "run-detail" model._id}}
+          <button class="form-button button-grey" {{action clearForm on="click"}}>BACK</button>
+        {{/link-to}}
+        <button class="form-button button-dark" {{action removeRun model on="click"}}><i class="fa fa-trash"></i></button>
+        <button class="form-button button-green">SAVE</button>
+      </div>
+    </form>
+  </div>
+</div>

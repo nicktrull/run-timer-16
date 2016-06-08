@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="app-container">
+
+    <form {{action newRun on="submit"}} novalidate="novalidate">
+      <h2 class="form-title">New Run</h2>
+      <ul>
+        <li class="form-list">
+          {{input-formatted pattern="{{99}}:{{99}}:{{99}}"
+                            placeholder="Run Time (hh:mm:ss)"
+                            value=time}}
+        </li>
+        <li class="form-list">
+          {{input-formatted pattern="{{99}}/{{99}}/{{9999}}"
+                            placeholder="Run Date (mm/dd/yyyy)"
+                            value=date}}
+        </li>
+        <li class="form-list">
+          {{textarea placeholder="Race Notes"
+                     autoresize=true
+                     value=notes}}
+        </li>
+      </ul>
+
+      <div class="form-submit">
+        {{#link-to "index"}}
+          <button class="form-button button-grey" {{action clearForm on="click"}}>CANCEL</button>
+        {{/link-to}}
+        <button class="form-button button-green">SAVE</button>
+      </div>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="app-container">
+    <div class="run-details">
+      <h2 class="run-details__title">My Run</h2>
+      <div class="run-details__info">
+        <span class="run-details__item--text">{{model.date}}</span>
+        <span class="run-details__item--text text-green">{{model.time}}</span>
+      </div>
+      <div class="run-details__content">
+        <p>{{model.notes}}</p>
+      </div>
+    </div>
+    <div class="run-details__edit">
+      {{#link-to "index"}}
+        <button class="button button-grey"><i class="button__icon--grey fa fa-chevron-left"></i></button>
+      {{/link-to}}
+      {{#link-to "run-edit" model._id}}
+        <button class="button button-green"><i class="button__icon fa fa-pencil"></i></button>
+      {{/link-to}}
+    </div>
+  </div>
+</div>
